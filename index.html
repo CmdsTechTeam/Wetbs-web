@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WeTbs">
+    <meta name="author" content="Commands Technology">
+    <title>WeTbs</title>
+    <!-- 使用国内CDN引入Bootstrap CSS -->
+    <link href="https://cdn.bootcdn.net/ajax/libs/bootstrap/5.3.0-alpha1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 使用国内CDN引入Google字体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- 使用国内CDN引入FontAwesome图标 -->
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .navbar-brand {
+            font-weight: bold;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">WeTbs</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#home">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">项目展示</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">联系我们</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero bg-primary text-white text-center py-5">
+    <div class="container">
+        <h1 class="display-4">欢迎来到WeTbs</h1>
+        <p class="lead">拒绝神金"小野猫"从我做起</p>
+    </div>
+</section>
+
+<!-- Project Section -->
+<section id="projects" class="py-5">
+    <div class="container">
+        <h2 class="section-title">我们的项目</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <!-- Project 1 -->
+            <div class="col">
+                <div class="card shadow">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="项目 1">
+                    <div class="card-body">
+                        <h5 class="card-title">项目 1：局域网文件传输助手</h5>
+                        <p class="card-text">一个基于Python的局域网助手，帮助用户传输文件。(暂不开源)</p>
+                        <a href="https://www.123865.com/s/zTLTjv-ajI4" class="btn btn-primary">123云盘下载</a><a href="https://www.123684.com/s/zTLTjv-ajI4" class="btn btn-primary">备用下载</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="col">
+                <div class="card shadow">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="项目 2">
+                    <div class="card-body">
+                        <h5 class="card-title">项目 2</h5>
+                        <p class="card-text"></p>
+                        <a href="#" class="btn btn-primary">了解更多</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="col">
+                <div class="card shadow">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="项目 3">
+                    <div class="card-body">
+                        <h5 class="card-title">项目 3</h5>
+                        <p class="card-text"></p>
+                        <a href="#" class="btn btn-primary">了解更多</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="bg-light py-5">
+    <div class="container">
+        <h2 class="section-title">联系我们</h2>
+        <p class="text-center">如果您有任何问题或合作意向，欢迎通过以下方式联系我们。</p>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">姓名</label>
+                        <input type="text" class="form-control" id="name" placeholder="请输入您的姓名">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">邮箱</label>
+                        <input type="email" class="form-control" id="email" placeholder="请输入您的邮箱">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">留言</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="请输入您的留言"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">发送留言</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>&copy; 2024 命令科技 | 所有权利保留</p>
+</footer>
+
+<!-- 使用国内CDN引入Bootstrap JS和Popper.js -->
+<script src="https://cdn.bootcdn.net/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/bootstrap/5.3.0-alpha1/js/bootstrap.min.js"></script>
+
+<!-- JS动态效果 -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Scroll effects
+        const sections = document.querySelectorAll('section');
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.scrollY + window.innerHeight;
+            sections.forEach(section => {
+                if (section.offsetTop < scrollPosition) {
+                    section.classList.add('animate__fadeIn');
+                }
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
